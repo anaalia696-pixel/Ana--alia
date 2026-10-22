@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#242424">
+  <meta name="description" content="Ana Alia is a first-year B.Tech student exploring web development, AI, and technology.">
+  <title>Ana Alia | Aspiring Web Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <canvas class="starfield" id="starfield" aria-hidden="true"></canvas>
+  <div class="nebula nebula-one" aria-hidden="true"></div>
+  <div class="nebula nebula-two" aria-hidden="true"></div>
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+  <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+  <div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Ana Alia, home"><span class="brand-mark">A</span><span>Ana Alia<span class="brand-period">.</span></span></a>
+    <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="siteNav" aria-label="Open navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="site-nav" id="siteNav" aria-label="Main navigation">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="header-cta" href="#contact">Let's talk <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero section-shell" id="home" aria-labelledby="heroTitle">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> Learning <span aria-hidden="true">·</span> Building <span aria-hidden="true">·</span> Growing</p>
+        <h1 id="heroTitle">Hi, I'm<br><span class="gradient-text">Ana Alia</span></h1>
+        <p class="hero-role">First-Year B.Tech Student <span aria-hidden="true">|</span> <span id="typedRole" aria-live="off">Aspiring Web Developer</span><span class="type-caret" aria-hidden="true"></span></p>
+        <p class="hero-description">Exploring the universe of web development and AI, one idea at a time.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">Explore My Projects <span aria-hidden="true">↘</span></a>
+          <a class="button button-secondary" href="#contact">Contact Me</a>
+        </div>
+        <div class="hero-note"><span class="note-line"></span> Curious mind. Creative beginnings.</div>
+      </div>
+      <div class="hero-art">
+        <div class="orbit orbit-outer"></div>
+        <div class="orbit orbit-inner"></div>
+        <span class="orbit-star star-a" aria-hidden="true">✦</span>
+        <span class="orbit-star star-b" aria-hidden="true">✧</span>
+        <div class="portrait-placeholder">
+          <img class="hero-portrait" src="assets/ana-alia.png" alt="Anime-style illustration of Ana Alia in a green sari at a colorful festival">
+        </div>
+        <div class="floating-label"><span class="label-icon">✧</span><span>Curious about<br><strong>what's possible</strong></span></div>
+        <div class="art-index">01 <span></span> 06</div>
+      </div>
+      <a class="scroll-cue" href="#about"><span></span> Scroll to explore</a>
+    </section>
+
+    <section class="content-section section-shell" id="about" aria-labelledby="aboutTitle">
+      <div class="section-heading reveal">
+        <p class="eyebrow">A little introduction</p>
+        <h2 id="aboutTitle">A Little <span class="gradient-text">About Me</span></h2>
+        <p class="section-lead">I'm at the beginning of my journey, and excited about where it can lead.</p>
+      </div>
+      <div class="about-layout">
+        <div class="about-copy glass-card reveal">
+          <span class="card-kicker">MY STORY <span aria-hidden="true">✦</span></span>
+          <p>I'm Ana Alia, a first-year B.Tech student at SMRU with a growing interest in web development, Artificial Intelligence, and technology workshops. I enjoy exploring new ideas, learning practical skills, and working with others to turn concepts into digital experiences. Through my learning journey and teamwork at Campus Byte, I'm building my foundation as a developer and working toward creating meaningful technology solutions.</p>
+          <div class="about-signoff"><span class="signoff-line"></span> One curious step at a time</div>
+        </div>
+        <div class="info-grid">
+          <article class="info-card glass-card reveal"><span class="info-icon" aria-hidden="true">⌘</span><h3>Education</h3><p>Currently pursuing B.Tech at SMRU.</p></article>
+          <article class="info-card glass-card reveal"><span class="info-icon" aria-hidden="true">✳</span><h3>Interests</h3><p>Web development, AI, and technology workshops.</p></article>
+          <article class="info-card glass-card reveal"><span class="info-icon" aria-hidden="true">◎</span><h3>Teamwork</h3><p>Collaborating and learning with Campus Byte.</p></article>
+          <article class="info-card glass-card reveal"><span class="info-icon" aria-hidden="true">↗</span><h3>My direction</h3><p>Building useful digital experiences as I grow my skills.</p></article>
+        </div>
+      </div>
+      <div class="collab-card glass-card reveal">
+        <div class="constellation" aria-hidden="true"><span></span><span></span><span></span><span></span><i></i></div>
+        <div><p class="card-kicker">GROWING THROUGH COLLABORATION</p><h3>Better ideas happen together.</h3><p>Being part of Campus Byte gives me opportunities to collaborate, exchange ideas, explore technology, and continue learning through teamwork.</p></div>
+      </div>
+    </section>
+
+    <section class="content-section section-shell" id="skills" aria-labelledby="skillsTitle">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Learning by doing</p>
+        <h2 id="skillsTitle">My <span class="gradient-text">Skills</span></h2>
+        <p class="section-lead">The foundations I'm exploring and practicing right now.</p>
+      </div>
+      <div class="skills-grid">
+        <article class="skill-card skill-feature glass-card reveal"><span class="skill-symbol" aria-hidden="true">⌘</span><div><p class="card-kicker">MY FOCUS</p><h3>Web Development</h3><p>Learning to shape ideas into thoughtful, accessible experiences for the web.</p></div><span class="skill-arrow" aria-hidden="true">↗</span></article>
+        <article class="skill-card glass-card reveal"><span class="tech-icon html-icon" aria-hidden="true">&lt;/&gt;</span><h3>HTML</h3><p>Learning semantic page structure.</p></article>
+        <article class="skill-card glass-card reveal"><span class="tech-icon css-icon" aria-hidden="true">✳</span><h3>CSS</h3><p>Practicing layouts, styling, and responsive design.</p></article>
+        <article class="skill-card glass-card reveal"><span class="tech-icon js-icon" aria-hidden="true">JS</span><h3>JavaScript</h3><p>Exploring the fundamentals of interactive websites.</p></article>
+        <article class="skill-card glass-card reveal"><span class="tech-icon responsive-icon" aria-hidden="true">▣</span><h3>Responsive Design</h3><p>Building pages for different screens and devices.</p></article>
+      </div>
+      <p class="honesty-note reveal"><span aria-hidden="true">✦</span> These are learning areas, not proficiency ratings.</p>
+    </section>
+
+    <section class="content-section section-shell" id="projects" aria-labelledby="projectsTitle">
+      <div class="section-heading section-heading-row reveal">
+        <div><p class="eyebrow">Ideas taking shape</p><h2 id="projectsTitle">Things I'm <span class="gradient-text">Building</span></h2><p class="section-lead">A few learning projects and concepts from my journey.</p></div>
+        <span class="project-count">04 <span>PROJECTS</span></span>
+      </div>
+      <div class="projects-grid" id="projectGrid"></div>
+    </section>
+
+    <section class="content-section section-shell" id="services" aria-labelledby="servicesTitle">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Small beginnings, thoughtful work</p>
+        <h2 id="servicesTitle">What I Can <span class="gradient-text">Help With</span></h2>
+        <p class="section-lead">A beginner-friendly offering, shared honestly as I keep learning.</p>
+      </div>
+      <article class="service-card glass-card reveal">
+        <div class="service-visual" aria-hidden="true"><div class="service-window"><span></span><span></span><span></span><i>&lt;/&gt;</i></div><div class="service-orbit"></div></div>
+        <div class="service-copy"><p class="card-kicker">01 / WEB</p><h3>Simple &amp; Responsive<br>Website Development</h3><p>I create clean, simple, and responsive websites designed to work across mobile phones, tablets, and desktop screens.</p><ul><li>Simple website layouts</li><li>Responsive page design</li><li>Basic front-end development</li><li>Clean, user-friendly interfaces</li></ul><p class="service-disclaimer">A learning journey in progress — let's discuss the right fit for your needs.</p></div>
+      </article>
+    </section>
+
+    <section class="content-section section-shell contact-section" id="contact" aria-labelledby="contactTitle">
+      <div class="section-heading reveal">
+        <p class="eyebrow">The next good idea could start here</p>
+        <h2 id="contactTitle">Let's <span class="gradient-text">Connect</span></h2>
+        <p class="section-lead">Have an idea, a project, or an opportunity to collaborate? I'd love to connect, learn, and explore new possibilities.</p>
+      </div>
+      <div class="contact-layout">
+        <div class="contact-details glass-card reveal">
+          <p class="card-kicker">FIND ME AROUND THE WEB</p>
+          <h3>Say hello<span class="gradient-text">.</span></h3>
+          <p class="contact-intro">My contact details are easy to personalize. Update the placeholders in <code>js/main.js</code> when you're ready.</p>
+          <div class="contact-list" id="contactList"></div>
+          <p class="copy-feedback" id="contactCopyFeedback" role="status" aria-live="polite"></p>
+          <div class="contact-footnote"><span class="status-dot"></span> Open to learning and collaboration</div>
+        </div>
+        <form class="contact-form glass-card reveal" id="contactForm">
+          <p class="card-kicker">SEND A NOTE</p>
+          <div class="form-row">
+            <label for="contactName">Name<input id="contactName" name="name" autocomplete="name" placeholder="Your name" required></label>
+            <label for="contactEmail">Email<input id="contactEmail" name="email" type="email" autocomplete="email" placeholder="you@example.com" required></label>
+          </div>
+          <label for="contactSubject">Subject<input id="contactSubject" name="subject" placeholder="What would you like to discuss?" required></label>
+          <label for="contactMessage">Message<textarea id="contactMessage" name="message" rows="4" placeholder="Write your message..." required></textarea></label>
+          <button class="button button-primary submit-button" type="submit">Check message <span aria-hidden="true">↗</span></button>
+          <p class="form-feedback" id="formFeedback" role="status" aria-live="polite">This demo form isn't connected to a delivery service, so it won't send a message.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-top section-shell">
+      <a class="brand" href="#home"><span class="brand-mark">A</span><span>Ana Alia<span class="brand-period">.</span></span></a>
+      <p>Designed and built by Ana Alia</p>
+      <nav aria-label="Footer navigation"><a href="#about">About</a><a href="#projects">Projects</a><a href="#contact">Contact</a></nav>
+      <nav class="footer-socials" id="footerSocials" aria-label="Social profiles"></nav>
+    </div>
+    <div class="footer-bottom section-shell"><span>© <span id="year"></span> Ana Alia. All rights reserved.</span><a href="#home">Back to the beginning ↑</a><span class="footer-stars" aria-hidden="true">✦ &nbsp; · &nbsp; ✧</span></div>
+  </footer>
+  <dialog class="project-modal" id="projectModal" aria-labelledby="projectModalTitle" aria-describedby="projectModalDescription">
+    <div class="project-modal-card">
+      <button class="modal-close" id="closeProjectModal" type="button" aria-label="Close project details">×</button>
+      <p class="card-kicker">PROJECT OVERVIEW</p>
+      <h2 id="projectModalTitle"></h2>
+      <p class="project-status" id="projectModalStatus"></p>
+      <p id="projectModalDescription"></p>
+      <div class="modal-tags" id="projectModalTags" aria-label="Suggested learning areas"></div>
+      <p class="modal-note">Details and code links will be added when a project is available to share.</p>
+    </div>
+  </dialog>
+  <button class="scroll-top" id="scrollTop" type="button" aria-label="Scroll to top">↑</button>
+  <script src="js/main.js"></script>
+</body>
+</html>
